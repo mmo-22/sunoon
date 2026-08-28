@@ -1,21 +1,23 @@
 //
 //  SunoonApp.swift
-//  Sunoon
+//  سنون — التاريخ والراتب والصلاة
 //
-//  Created by Mohammed Omar on 26/08/2026.
+//  الشاشة الرئيسية للتطبيق. يفرض اتجاه الكتابة من اليمين لليسار
+//  لأن كل محتوى التطبيق عربي بغض النظر عن لغة نظام الجهاز.
+//  وضع النظام (فاتح/داكن/تلقائي) يُقرأ من إعدادات المستخدم المحفوظة.
 //
 
 import SwiftUI
-import CoreData
 
 @main
 struct SunoonApp: App {
-    let persistenceController = PersistenceController.shared
+    @State private var settings = SettingsStore()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView(settings: settings)
+                .environment(\.layoutDirection, .rightToLeft)
+                .preferredColorScheme(settings.appearanceMode.colorScheme)
         }
     }
 }
