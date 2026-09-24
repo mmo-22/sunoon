@@ -9,5 +9,11 @@
       "url": "https://raw.githubusercontent.com/mmo-22/sunoon/main/content/adhkar-share/evening.png",
       "updatedAt": "2026-09-24T19:08:52Z"
     }
+  },
+  "daily": {
+    "2026-09-24": {
+      "url": "https://raw.githubusercontent.com/mmo-22/sunoon/main/content/adhkar-share/2026-09-24.png",
+      "updatedAt": "2026-09-24T19:30:00Z"
+    }
   }
 }
