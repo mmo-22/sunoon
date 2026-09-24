@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "cards": {
+    "morning": {
+      "url": "https://raw.githubusercontent.com/mmo-22/sunoon/main/content/adhkar-share/morning.png",
+      "updatedAt": "2026-09-24T19:08:52Z"
+    },
+    "evening": {
+      "url": "https://raw.githubusercontent.com/mmo-22/sunoon/main/content/adhkar-share/evening.png",
+      "updatedAt": "2026-09-24T19:08:52Z"
+    }
+  }
+}
